@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <title>Web Forms</title>
+    <link rel="stylesheet" type="text/css" href="web-form-styles.css">
+    </head>
+    <body>
+        <h1>Pet Adoption Application</h1>
+        
+        <form method="GET">
+        <label>Your Name:
+            <input type="text" name="applicantName">
+        </label>
+        <label>Your E-mail:
+            <input type="email" name="applicantEmail">
+        </label>
+        <label>What city are you in?
+            <input type="text" name="applicantCity">
+        </label>
+        <label>How many pets are in your home?
+            <input type="number" name="petCount">
+        </label>
+        <label>Why do you want to adopt a new pet?
+            <textarea name="applicantReason" rows="4" cols="50">Because I don't have enough cat hair on my sofa :(<</textarea>
+        </label>
+        
+        <fieldset class="checkbox">
+        <legend>What type of animals are you interested in?</legend>
+        <label>
+            <input type="checkbox" name="species" value="dogs">Dog
+            <span class="checkmar"></span>
+        </label>
+        <label>
+            <input type="checkbox" name="species" value="iguanas">Iguanas
+             <span class="checkmar"></span>
+        </label>
+        <label>
+            <input type="checkbox" name="species" value="cats">Cats
+             <span class="checkmar"></span>
+        </label>
+        </fieldset>
+        <fieldset>
+            <legend>Are you interested in adopting special needs or erderly pets?</legend>
+            <label>
+            <input type="radio" name="special" value="yes">
+            Yes
+            </label>
+            <label>
+            <input type="radio" name="special" value="no">
+            No
+            </label>
+        </fieldset>
+        <label>How many hours a day is someone usually home to keep a pet company?
+        <select name="hours">
+            <option value="">Please select</option>
+            <option value="few">less than 10</option>
+            <option value="some">10 to 16</option>
+            <option value="many">more than 16</option>
+        </select>
+        </label>
+        <label>To create account, enter a password
+            <input type="password" name="accountPW">
+        </label>
+        <input type="submit" value="Apply Now!">
+        </form>
+    </body>
+</html>
